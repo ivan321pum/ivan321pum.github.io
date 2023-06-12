@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+h1 {
+    font-family: 'Fredoka', regular;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: "Open Sans", regular;
+}
+
+p {
+    font-family: "Open Sans", regular;
+}
+
+.nombre {
+    margin-bottom: 0px;
+}
+
+header {
+    background-color: #FBC006;
+    color: #106BC7;
+    padding: 20px;
+    outline: none;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: "Open Sans", regular;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #106BC7;
+    text-decoration: none;
+}
+
+nav ul li :hover {
+    color: #2D9BF0;
+    text-decoration: none;
+}
+.b {
+  display: flex;
+  align-items: center;
+}
+
+.b svg {
+  margin-right: 5px; /* Ajusta el margen si es necesario */
+}
+
+.title {
+    background-color: #F09B2D;
+    border-radius: 20px;
+}
+
+.title h1 {
+    margin-left: 10px;
+    font-size: 64px;
+    color: #106BC7;
+}
