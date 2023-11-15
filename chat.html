@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat-GPT</title>
+    <link rel="stylesheet" href="css/style-chat.css">
+</head>
+<body>
+<div id="chatlist">
+    <button id="addChat" onclick="addChat()">A&#241;adir chat</button>
+    <button onclick="openChat('Chat 1')">Chat 1</button>
+    <button onclick="openChat('Chat 2')">Chat 2</button>
+    <button onclick="openChat('Chat 3')">Chat 3</button>
+</div>
+<div id="chatbox">
+    <div id="header">Chatbot 9.5.5</div>
+    <div id="messages"></div>
+    <div id="input">
+        <input type="text" id="messageInput">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+<div id="settingsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">x</span>
+        <h2>Ajustes</h2>
+        <p>Introduce tu clave API de openAI: <input></p>
+        <p>Selecciona el modelo que deseas utilizar: <input></p>
+        <button>Eliminar todos los chats</button>
+    </div>
+</div>
+<script src="js/js-chatbot.js"></script>
+</body>
+</html>
