@@ -14,23 +14,58 @@ p {
     text-align: justify;
 }
 
+h1.nombre, h2 {
+    font-family: 'Bebas Neue', sans-serif; /* Fuente con carácter y fuerza */
+    color: #f1c40f; /* Un buen amarillo 'Freddie Mercury' */
+    text-transform: uppercase; /* A todo gas y en mayúsculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Una sombra para que resalte como debe */
+    margin-bottom: 0.5em; /* Espacio óptimo debajo del título */
+}
+
+h2 {
+    font-size: 2.2em; /* Un poco más pequeño que el título principal */
+    padding-bottom: .3em; /* Pequeño espacio debajo para una separación visual clara */
+    border-bottom: 2px solid #e8491d; /* Una línea para separar del contenido */
+    display: inline-block; /* Esto permite que la línea tenga solo el largo del texto */
+    margin-bottom: 20px; /* Espacio debajo antes del contenido */
+}
+
+h2:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: border-color 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a; /* Fondo oscuro para dar un toque más 'rockero' */
+    color: #ffffff; /* Texto en color blanco para contraste */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+}
+
 .nombre {
     margin-bottom: 0px;
 }
 
 header {
-    background-color: #FBCD19;
-    color: #106BC7;
-    padding: 20px;
-    outline: none;
-    margin: 0;
-    border-radius: 20px;
+    background: #1a1a1a; /* Un gris oscuro para la cabecera */
+    color: #f1c40f; /* Un amarillo-rojo, para dar un toque a tus héroes del rock */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid; /* Una línea roja para separar el encabezado del contenido */
 }
 
+header .nombre {
+    font-size: 2.5em; /* Un tamaño más grande para tu nombre */
+}
+
+
+
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 nav ul {
@@ -39,8 +74,14 @@ nav ul {
     font-family: "Open Sans", regular;
 }
 
-nav ul li {
-    margin-right: 10px;
+header nav ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header nav ul li a {
+    color: #f1c40f;
+    text-decoration: none;
+    text-transform: uppercase; /* MAYÚSCULAS para un aspecto más fuerte */
 }
 
 nav ul li a {
@@ -48,13 +89,27 @@ nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 nav ul li :hover {
     color: #2D9BF0;
     text-decoration: none;
 }
 .b {
-  display: flex;
-  align-items: center;
+    background-color: #e8491d; /* Color rojizo para destacar */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados para un look más moderno */
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer; /* Para que se sepa que es un botón */
+}
+
+.b:hover {
+    background-color: #f1c40f; /* Cambio a amarillo al pasar el ratón */
 }
 
 .b svg {
@@ -62,7 +117,7 @@ nav ul li :hover {
 }
 
 .title {
-    background-color: #F09B2D;
+    background-color: #e8491d;
     border-radius: 20px;
   justify-content: center; /* Alinear verticalmente y centrar horizontalmente */
   text-align: center; /* Centrar el texto */
