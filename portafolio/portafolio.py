@@ -13,4 +13,3 @@ app.add_page(
     title="Iván Sevilla, software developer",
     description = "Prueba"
 )
-app.compile()
