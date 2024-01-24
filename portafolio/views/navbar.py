@@ -24,7 +24,6 @@ def navbar() -> rx.component:
                 rx.button(
                     "Option 1",
                     color=TextColor.titles.value,
-                    _hover={"g": Color.ACCENT.value},
                 ),
                 rx.button(
                     "Option 2",
