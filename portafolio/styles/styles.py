@@ -7,7 +7,7 @@ class Size(Enum):
     SMALL = "0.5em"
     DEFAULT = "1em"
     BIG = "2em"
-    VERY_BIG = "4.5em"
+    VERY_BIG = "4em"
 
 
 STYLESHEETS = [

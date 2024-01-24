@@ -10,7 +10,7 @@ def navbar() -> rx.component:
                 "Iván Sevilla Gómez",
                 as_="b",
                 font_size=Size.VERY_BIG.value,
-                color=TextColor.titles.value
+                color=TextColor.title.value
             ),
             rx.text("Software Developer Student",
                     as_="b",
@@ -23,7 +23,8 @@ def navbar() -> rx.component:
             rx.button_group(
                 rx.button(
                     "Option 1",
-                    color=TextColor.titles.value
+                    color=TextColor.titles.value,
+                    _hover={"g": Color.ACCENT.value},
                 ),
                 rx.button(
                     "Option 2",
@@ -37,7 +38,7 @@ def navbar() -> rx.component:
         ),
     position="sticky",
     bg=Color.primary.value,
-    border_bottom=f"0.25em solid {Color.ACCENT.value}",
+    border_bottom=f"0.5em solid {Color.black.value}",
     padding_x=Size.BIG.value,
     padding_y=Size.BIG.value,
     z_index="999",
