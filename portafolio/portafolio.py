@@ -4,8 +4,9 @@ from portafolio.views.navbar import navbar
 
 def index() -> rx.component:
     return rx.box(
-        navbar()
+        navbar(),
     )
+
 
 app = rx.App(
     stylesheets=styles.STYLESHEETS, #añades los estilos a la app
