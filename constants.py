@@ -1,1 +1,2 @@
-GITHUB_ICON_DIRECTORY = "assets/icons8-github-60.svg"
+GITHUB_WEBSITE = "https://github.com/ivan321pum"
+FIVERR_WEBSITE = "https://fiverr.com/codeshark_"

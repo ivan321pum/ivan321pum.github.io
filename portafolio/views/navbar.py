@@ -3,7 +3,7 @@ import reflex as rx
 import constants
 from portafolio.styles.styles import Size
 from portafolio.styles.colors import Color, TextColor
-from constants import GITHUB_ICON_DIRECTORY
+from portafolio.components.link_button import navbar_link_button, icon_button
 
 def navbar() -> rx.component:
     return rx.hstack(
@@ -22,21 +22,18 @@ def navbar() -> rx.component:
         ),
         rx.spacer(),
         rx.hstack(
-            rx.button_group(
-                rx.button(
-                    rx.html("<img src='assets/icons8-github-60.svg'/>"),
-                    on_click=rx.redirect("https://github.com/ivan321pum", external=True),
-                    color=TextColor.titles.value,   
+            rx.vstack(
+                rx.button_group(
+                    navbar_link_button("About Me", "", False),
+                    navbar_link_button("My Skills", "", False),
+                    navbar_link_button("Projects", "", False),
+                    navbar_link_button("Contact me", "", False),
                 ),
-                rx.button(
-                    "Option 2",
-                    color=TextColor.titles.value
-                ),
-                rx.button(
-                    "Option 3",
-                    color=TextColor.titles.value
-                ),
-            )
+                rx.button_group(  # Social links
+                    icon_button("/github.svg", constants.GITHUB_WEBSITE, True),
+                    navbar_link_button("Fiverr", constants.FIVERR_WEBSITE, True),
+                )
+            ),
         ),
     position="sticky",
     bg=Color.primary.value,
