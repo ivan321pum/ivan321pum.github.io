@@ -12,12 +12,12 @@ def navbar() -> rx.component:
                 "Iván Sevilla Gómez",
                 as_="b",
                 font_size=Size.VERY_BIG.value,
-                color=TextColor.title.value
+                color=TextColor.primary.value
             ),
             rx.text("Software Developer Student",
                     as_="b",
                     font_size=Size.BIG.value,
-                    color=TextColor.titles.value
+                    color=TextColor.primary.value
                     ),
         ),
         rx.spacer(),
