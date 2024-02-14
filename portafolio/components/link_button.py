@@ -5,7 +5,7 @@ from portafolio.styles.styles import Size
 
 def navbar_link_button(text: str, url: str, external: bool):
     return rx.link(
-        rx.button(text, color=TextColor.titles.value),
+        rx.button(text, color=TextColor.secondary.value),
         href=url,
         button=True,
         is_external=external,

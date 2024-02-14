@@ -1,10 +1,12 @@
 import reflex as rx
 import portafolio.styles.styles as styles #importa el script de estilos
 from portafolio.views.navbar import navbar
+from portafolio.views.header import header
 
 def index() -> rx.component:
     return rx.box(
         navbar(),
+        header(),
     )
 
 
